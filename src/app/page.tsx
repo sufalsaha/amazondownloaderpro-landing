@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+// /* eslint-disable @typescript-eslint/no-unused-vars */
+
 import Image from "next/image";
 import logo from "@/static/logo/hola_logo_letters.svg";
 import hero from "@/static/image/Screenshot_2.png";
@@ -28,7 +30,7 @@ export default function Home() {
     <div className={`${poppins.className} `}>
       <div className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl w-full fixed z-50">
-          <div className="mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#bf2626cc] backdrop-blur-[5px] h-[44px] md:h-[72px] xl:h-[80px] rounded-[8px] md:rounded-[12px] shadow-nav px-[16px] md:px-[24px] xl:px-[30px] flex justify-between items-center">
+          <div className="mx-[20px] md:mx-[28px] xl:mx-[124px] bg-[#bf2626cc] backdrop-blur-[5px] h-[44px] md:h-[72px] xl:h-[80px] rounded-[8px] md:rounded-[12px] shadow-nav px-[16px] md:px-[24px] xl:px-[30px] flex justify-between items-center">
             <nav className="w-full flex justify-between">
               <div>
                 <Image src={logo} alt="LOGO" className="w-[53px]  " />
@@ -46,24 +48,24 @@ export default function Home() {
         </div>
       </div>
       <section className="flex justify-center bg-[#ffffff]">
-        <div className="max-w-screen-2xl  w-full">
-          <div className="h-screen mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] md:px-[24px] xl:px-[30px] flex flex-col justify-center items-center  ">
+        <div className="max-w-screen-2xl w-full">
+          <div className="h-screen mx-[16]  md:mx-[27px] xl:mx-[124px] bg-[#fff] px-[16px] xl:px-[30px] flex flex-col justify-center items-center  ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div>
                 <Image src={hero} alt="LOGO" className=" w-[544px]  " />
               </div>
-              <div className=" flex flex-col justify-center items-center gap-[24px]">
-                <h1 className="text-[#32302f] text-[64px] font-[600] leading-[72px] text-center">
+              <div className=" flex flex-col justify-center items-center gap-[24px] px-[20px]">
+                <h1 className="text-[#32302f] text-[40px] font-[600] leading-[48px] text-center md:text-[48px] md:leading-[56px] xl:text-[64px] xl:leading-[72px] ">
                   Access worldwide content
                 </h1>
                 <p
-                  className={`${ibm_plex_mono.className} text-[#7d7d7d] text-[18px] font-[500] leading-[24px] text-center w-[510px]  `}
+                  className={`${ibm_plex_mono.className} text-[#7d7d7d] text-[18px] font-[500] leading-[24px] text-center max-w-[510px]  `}
                 >
                   Your gateway to your favorite movies, TV shows, games and
                   more, no matter where you live!
                 </p>
                 <div className=" flex flex-col justify-center items-center gap-[16px]">
-                  <button className="text-[#fff] text-[17px] font-[500] leading-[23px] text-center px-[32px] py-[20px] bg-[#32302F] rounded-4xl flex items-center gap-[12px] ">
+                  <button className="text-[#fff] text-[14px] font-[500] leading-[20px] text-center md:text-[17px] md:leading-[23px] px-[20px]  md:px-[32px] py-[20px] bg-[#32302F] rounded-4xl flex items-center gap-[12px] ">
                     Get Hola - it's free
                     <ArrowRight className="w-[22px] h-[18px] " />
                   </button>
@@ -79,14 +81,14 @@ export default function Home() {
 
       <section className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl  w-full">
-          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[120px] md:px-[24px] xl:px-[30px] ">
+          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div className="mb-[24px]">
                 <h2 className="text-[#32302f] text-[48px] font-[600] leading-[56px] text-center">
                   How it works
                 </h2>
               </div>
-              <div className=" w-full flex justify-between items-center gap-[18px] ">
+              <div className=" w-full flex flex-col justify-between items-center gap-[20px] lg:flex-row ">
                 <div className=" w-[256px] ">
                   <div>
                     <Image src={works1} alt="LOGO" className="h-[200px] " />
@@ -166,9 +168,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl  w-full">
-          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[120px] md:px-[24px] xl:px-[30px] ">
+          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div className="mb-[30px]">
                 <Image src={work} alt="LOGO" className=" w-[544px] " />
@@ -179,7 +182,7 @@ export default function Home() {
                 >
                   Go beyond your location!
                 </p>
-                <p className="text-[#65707c] text-[30px] font-[500] leading-[40px] text-center w-[725px] ">
+                <p className="text-[#65707c] text-[30px] font-[500] leading-[40px] text-center max-w-[725px] ">
                   Our mission is to make the internet truly borderless by
                   helping you change your virtual location and getting you
                   access to global content, no matter where you are!
@@ -192,14 +195,14 @@ export default function Home() {
 
       <section className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl  w-full">
-          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[120px] md:px-[24px] xl:px-[30px] ">
+          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div className="mb-[30px]">
-                <h2 className="text-[#32302f] text-[48px] font-[600] leading-[56px] text-center">
+                <h2 className="text-[#32302f] text-[38px] font-[600] leading-[48px] text-center md:text-[48px] md:leading-[56px]">
                   You'll love Hola!
                 </h2>
               </div>
-              <div className="flex gap-[20px]">
+              <div className="flex flex-col gap-[20px] lg:flex-row ">
                 <div className="max-w-[402px] flex flex-col justify-center items-center gap-[16px] ">
                   <div>
                     <Image src={hola1} alt="hola1" className="  " />
@@ -250,13 +253,13 @@ export default function Home() {
 
       <section className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl  w-full">
-          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[120px] md:px-[24px] xl:px-[30px] ">
+          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div className="mb-[30px]">
-                <h2 className="text-[#32302f] text-[48px] font-[600] leading-[56px] text-center">
+                <h2 className="text-[#32302f] text-[38px] font-[600] leading-[48px] text-center md:text-[48px] md:leading-[56px]">
                   Don't just take our word for it
                 </h2>
-                <div className="flex justify-center gap-[48px] mt-[24px] ">
+                <div className="flex justify-center flex-wrap gap-[25px] lg:gap-[48px] mt-[24px] ">
                   <div className="w-[200px] ">
                     <h4
                       className={`${ibm_plex_mono.className} text-[#32302f] text-[20px] font-[500] leading-[32px] text-center `}
@@ -299,8 +302,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex gap-[20px]">
-                <div className="w-[360px] h-[360px] border-2 border-[#FFE275] p-[32px] rounded-[8px]">
+              <div className="flex flex-col gap-[20px] lg:flex-row">
+                <div className="max-w-[360px] w-full h-[360px] border-2 border-[#FFE275] p-[32px] rounded-[8px]">
                   <div className=" flex flex-col gap-[20px] h-full ">
                     <div className="flex gap-[5px] ">
                       <Image
@@ -351,7 +354,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="w-[360px] h-[360px] border-2 border-[#FFE275] p-[32px] rounded-[8px]">
+                <div className="max-w-[360px] w-full  h-[360px] border-2 border-[#FFE275] p-[32px] rounded-[8px]">
                   <div className=" flex flex-col gap-[20px] h-full ">
                     <div className="flex gap-[5px] ">
                       <Image
@@ -402,7 +405,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="w-[360px] h-[360px] border-2 border-[#FFE275] p-[32px] rounded-[8px]">
+                <div className="max-w-[360px] w-full  h-[360px] border-2 border-[#FFE275] p-[32px] rounded-[8px]">
                   <div className=" flex flex-col gap-[20px] h-full ">
                     <div className="flex gap-[5px] ">
                       <Image
@@ -461,15 +464,15 @@ export default function Home() {
 
       <section className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl  w-full">
-          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[120px] md:px-[24px] xl:px-[30px] ">
+          <div className=" mx-[20px] md:mx-[70px] xl:mx-[124px] bg-[#fff]  py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div className="mb-[30px] flex flex-col justify-center items-center gap-[32px] ">
-                <h2 className="text-[#32302f] text-[48px] font-[600] leading-[56px] text-center max-w-[695px] ">
+                <h2 className="text-[#32302f] text-[38px] font-[600] leading-[48px] text-center max-w-[695px] md:text-[48px] md:leading-[56px]">
                   Never miss another episode, movie, match or game!
                 </h2>
 
-                <button className="text-[#fff] text-[17px] font-[500] leading-[23px] text-center px-[32px] py-[20px] bg-[#32302F] rounded-4xl flex items-center gap-[12px] ">
-                  Get Hola - it's free
+                <button className="text-[#fff] text-[14px] font-[500] leading-[20px] text-center md:text-[17px] md:leading-[23px] px-[20px]  md:px-[32px] py-[20px] bg-[#32302F] rounded-4xl flex items-center gap-[12px] ">
+                  Download Hola today!
                   <ArrowRight className="w-[22px] h-[18px] " />
                 </button>
               </div>
@@ -484,8 +487,8 @@ export default function Home() {
             <div className="w-full  flex flex-col justify-center items-center">
               <div className="w-full h-[2px] bg-[#E9E8E8] "></div>
 
-              <div className="flex justify-between w-full px-[50px] mt-[80px] ">
-                <div className="flex flex-col gap-[16px] ">
+              <div className="flex flex-col justify-between gap-[20px] md:flex-row w-full px-[50px] mt-[80px] ">
+                <div className="flex flex-col  gap-[16px] ">
                   <h4 className="text-[#32302f] text-[16px] font-[600] leading-[22px] ">
                     Support
                   </h4>
