@@ -30,7 +30,7 @@ export default function Home() {
     <div className={`${poppins.className} `}>
       <div className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl w-full fixed z-50">
-          <div className="mx-[20px] md:mx-[28px] xl:mx-[124px] bg-[#bf2626cc] backdrop-blur-[5px] h-[44px] md:h-[72px] xl:h-[80px] rounded-[8px] md:rounded-[12px] shadow-nav px-[16px] md:px-[24px] xl:px-[30px] flex justify-between items-center">
+          <div className="mx-[20px] md:mx-[28px] xl:mx-[124px] bg-[rgba(255, 255, 255, 0.3] backdrop-blur-[5px] h-[44px] md:h-[72px] xl:h-[80px] rounded-[8px] md:rounded-[12px] px-[16px] md:px-[24px] xl:px-[30px] flex justify-between items-center">
             <nav className="w-full flex justify-between">
               <div>
                 <Image src={logo} alt="LOGO" className="w-[53px]  " />
@@ -49,13 +49,13 @@ export default function Home() {
       </div>
       <section className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl w-full">
-          <div className="h-screen mx-[16]  md:mx-[27px] xl:mx-[124px] bg-[#fff] px-[16px] xl:px-[30px] flex flex-col justify-center items-center  ">
+          <div className=" mt-[70px] lg:mt-[0px] lg:h-screen mx-[16]  md:mx-[27px] xl:mx-[124px] bg-[#fff] px-[20px] xl:px-[30px] flex flex-col justify-center items-center  ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div>
                 <Image src={hero} alt="LOGO" className=" w-[544px]  " />
               </div>
-              <div className=" flex flex-col justify-center items-center gap-[24px] px-[20px]">
-                <h1 className="text-[#32302f] text-[40px] font-[600] leading-[48px] text-center md:text-[48px] md:leading-[56px] xl:text-[64px] xl:leading-[72px] ">
+              <div className=" flex flex-col justify-center items-center gap-[24px]">
+                <h1 className="text-[#32302f] text-[48px] font-[600] leading-[56px] text-center md:text-[48px] md:leading-[56px] xl:text-[64px] xl:leading-[72px] ">
                   Access worldwide content
                 </h1>
                 <p
@@ -64,8 +64,8 @@ export default function Home() {
                   Your gateway to your favorite movies, TV shows, games and
                   more, no matter where you live!
                 </p>
-                <div className=" flex flex-col justify-center items-center gap-[16px]">
-                  <button className="text-[#fff] text-[14px] font-[500] leading-[20px] text-center md:text-[17px] md:leading-[23px] px-[20px]  md:px-[32px] py-[20px] bg-[#32302F] rounded-4xl flex items-center gap-[12px] ">
+                <div className=" flex flex-col justify-center items-center gap-[16px] ">
+                  <button className="text-[#fff] text-[17px] font-[500] leading-[23px] text-center  px-[32px] py-[20px] bg-[#32302F] rounded-4xl flex items-center gap-[12px] ">
                     Get Hola - it's free
                     <ArrowRight className="w-[22px] h-[18px] " />
                   </button>
@@ -81,29 +81,29 @@ export default function Home() {
 
       <section className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl  w-full">
-          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
+          <div className=" mx-[20px] md:mx-[70px] xl:mx-[124px] bg-[#fff]  py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div className="mb-[24px]">
-                <h2 className="text-[#32302f] text-[48px] font-[600] leading-[56px] text-center">
+                <h2 className="text-[#32302f] text-[38px] font-[600] leading-[48px] text-center  md:text-[48px] md:leading-[56px]">
                   How it works
                 </h2>
               </div>
               <div className=" w-full flex flex-col justify-between items-center gap-[20px] lg:flex-row ">
-                <div className=" w-[256px] ">
+                <div className=" w-full lg:w-[256px] flex flex-col justify-center items-center lg:items-start  ">
                   <div>
                     <Image src={works1} alt="LOGO" className="h-[200px] " />
                   </div>
                   <h3
-                    className={`${ibm_plex_mono.className} text-[#32302f] text-[18px] font-[500] leading-[24px] `}
+                    className={`${ibm_plex_mono.className} text-[#32302f] text-[18px] font-[500] leading-[24px] text-center lg:text-start `}
                   >
                     Better browsing, brought to you by Hola!
                   </h3>
-                  <p className="text-[#65707c] text-[16px] font-[400] leading-[22px] mt-[16px]">
+                  <p className="text-[#65707c] text-[14px] font-[400] leading-[19px] mt-[16px] text-center lg:text-start md:text-[16px] md:leading-[22px] ">
                     Download the Hola Browser and follow the steps for
                     installation!
                   </p>
                 </div>
-                <div>
+                <div className="hidden lg:block">
                   <svg
                     version="1.1"
                     fill="none"
@@ -119,21 +119,21 @@ export default function Home() {
                     ></path>
                   </svg>
                 </div>
-                <div className=" w-[256px] ">
+                <div className=" w-full lg:w-[256px] flex flex-col justify-center items-center lg:items-start  ">
                   <div>
                     <Image src={works2} alt="LOGO" className="h-[200px] " />
                   </div>
                   <h3
-                    className={`${ibm_plex_mono.className} text-[#32302f] text-[18px] font-[500] leading-[24px] `}
+                    className={`${ibm_plex_mono.className} text-[#32302f] text-[18px] font-[500] leading-[24px] text-center lg:text-start `}
                   >
-                    Better browsing, brought to you by Hola!
+                    Get the extension and pin it to your browser
                   </h3>
-                  <p className="text-[#65707c] text-[16px] font-[400] leading-[22px] mt-[16px]">
-                    Download the Hola Browser and follow the steps for
-                    installation!
+                  <p className="text-[#65707c] text-[14px] font-[400] leading-[19px] mt-[16px] text-center lg:text-start md:text-[16px] md:leading-[22px] ">
+                    Now you can just choose the flag of the country you would
+                    like to appear from!
                   </p>
                 </div>
-                <div>
+                <div className="hidden lg:block">
                   <svg
                     version="1.1"
                     fill="none"
@@ -149,18 +149,18 @@ export default function Home() {
                     ></path>
                   </svg>
                 </div>
-                <div className=" w-[256px] ">
+                <div className=" w-full lg:w-[256px] flex flex-col justify-center items-center lg:items-start ">
                   <div>
                     <Image src={works3} alt="LOGO" className="h-[200px] " />
                   </div>
                   <h3
-                    className={`${ibm_plex_mono.className} text-[#32302f] text-[18px] font-[500] leading-[24px] `}
+                    className={`${ibm_plex_mono.className} text-[#32302f] text-[18px] font-[500] leading-[24px] text-center lg:text-start `}
                   >
-                    Better browsing, brought to you by Hola!
+                    Get the extension and pin it to your browser
                   </h3>
-                  <p className="text-[#65707c] text-[16px] font-[400] leading-[22px] mt-[16px]">
-                    Download the Hola Browser and follow the steps for
-                    installation!
+                  <p className="text-[#65707c] text-[14px] font-[400] leading-[19px] mt-[16px] text-center lg:text-start md:text-[16px] md:leading-[22px] ">
+                    Now you can just choose the flag of the country you would
+                    like to appear from!
                   </p>
                 </div>
               </div>
@@ -171,7 +171,7 @@ export default function Home() {
 
       <section className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl  w-full">
-          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
+          <div className=" mx-[20px] md:mx-[70px] xl:mx-[124px] bg-[#fff]  py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div className="mb-[30px]">
                 <Image src={work} alt="LOGO" className=" w-[544px] " />
@@ -182,7 +182,7 @@ export default function Home() {
                 >
                   Go beyond your location!
                 </p>
-                <p className="text-[#65707c] text-[30px] font-[500] leading-[40px] text-center max-w-[725px] ">
+                <p className="text-[#65707c] text-[24px] font-[500] leading-[32px] text-center max-w-[725px]  md:text-[30px] md:leading-[40px] ">
                   Our mission is to make the internet truly borderless by
                   helping you change your virtual location and getting you
                   access to global content, no matter where you are!
@@ -195,7 +195,7 @@ export default function Home() {
 
       <section className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl  w-full">
-          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
+          <div className=" mx-[20px] md:mx-[70px] xl:mx-[124px] bg-[#fff]  py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div className="mb-[30px]">
                 <h2 className="text-[#32302f] text-[38px] font-[600] leading-[48px] text-center md:text-[48px] md:leading-[56px]">
@@ -253,7 +253,7 @@ export default function Home() {
 
       <section className="flex justify-center bg-[#ffffff]">
         <div className="max-w-screen-2xl  w-full">
-          <div className=" mx-[24px] md:mx-[70px] xl:mx-[124px] bg-[#fff] px-[16px] py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
+          <div className=" mx-[20px] md:mx-[70px] xl:mx-[124px] bg-[#fff]  py-[40px] lg:py-[120px] md:px-[24px] xl:px-[30px] ">
             <div className="w-full  flex flex-col justify-center items-center">
               <div className="mb-[30px]">
                 <h2 className="text-[#32302f] text-[38px] font-[600] leading-[48px] text-center md:text-[48px] md:leading-[56px]">
@@ -471,7 +471,7 @@ export default function Home() {
                   Never miss another episode, movie, match or game!
                 </h2>
 
-                <button className="text-[#fff] text-[14px] font-[500] leading-[20px] text-center md:text-[17px] md:leading-[23px] px-[20px]  md:px-[32px] py-[20px] bg-[#32302F] rounded-4xl flex items-center gap-[12px] ">
+                <button className="text-[#fff] text-[17px] font-[500] leading-[23px] text-center px-[25px]  md:px-[32px] py-[20px] bg-[#32302F] rounded-4xl flex items-center gap-[12px] ">
                   Download Hola today!
                   <ArrowRight className="w-[22px] h-[18px] " />
                 </button>
